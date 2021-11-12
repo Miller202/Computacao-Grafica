@@ -2,7 +2,7 @@
 #include <GL/glut.h>
 #include <GLFW/glfw3.h>
 #include <cstdlib>
-#include<cstdio>
+#include <cstdio>
 
 #define WINDOW_WIDTH 640
 #define WINDOW_HEIGHT 480
