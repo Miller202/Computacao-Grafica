@@ -2,6 +2,7 @@
 
 // Subir quadrados da Ola: A S D F G
 // Descer quadrados da Ola: Z X C V B
+// Ps: Clicar com o botão esquerdo do mouse para cada movimento
 
 static GLfloat v[10]={ // array do eixo y
         0,  2,
@@ -59,7 +60,7 @@ void displaySquare()
     glFlush();
 }
 
-void keyboard(unsigned char key){
+void keyboard(unsigned char key, int x, int y){
     switch (key) {
         case 'a':
             v[0] += 2;
@@ -114,13 +115,13 @@ int main(int argc, char **argv)
     glutCreateWindow("square");
 
     glClearColor(0.0, 0.05, 0.10, 1.0); // cor de fundo
+    glOrtho(-10.0, 10.0, -10.0, 10.0, 1.0, -1.0); // projeção ortogonal
 
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glOrtho(-10.0, 10.0, -10.0, 10.0, 1.0, -1.0); // projeção ortogonal
 
     glutDisplayFunc(displaySquare);
-    glutKeyboardFunc(reinterpret_cast<void (*)(unsigned char, int, int)>(keyboard));
+    glutKeyboardFunc(keyboard);
     glutMainLoop();
 
     return 0;
