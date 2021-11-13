@@ -2,7 +2,6 @@
 
 // Subir quadrados da Ola: A S D F G
 // Descer quadrados da Ola: Z X C V B
-// Ps: Clicar com o botão esquerdo do mouse para cada movimento
 
 static GLfloat v[10]={ // array do eixo y
         0,  2,
@@ -65,42 +64,52 @@ void keyboard(unsigned char key, int x, int y){
         case 'a':
             v[0] += 2;
             v[1] += 2;
+            displaySquare();
             break;
         case 's':
             v[2] += 2;
             v[3] += 2;
+            displaySquare();
             break;
         case 'd':
             v[4] += 2;
             v[5] += 2;
+            displaySquare();
             break;
         case 'f':
             v[6] += 2;
             v[7] += 2;
+            displaySquare();
             break;
         case 'g':
             v[8] += 2;
             v[9] += 2;
+            displaySquare();
             break;
         case 'z':
             v[0] -= 2;
             v[1] -= 2;
+            displaySquare();
             break;
         case 'x':
             v[2] -= 2;
             v[3] -= 2;
+            displaySquare();
             break;
         case 'c':
             v[4] -= 2;
             v[5] -= 2;
+            displaySquare();
             break;
         case 'v':
             v[6] -= 2;
             v[7] -= 2;
+            displaySquare();
             break;
         case 'b':
             v[8] -= 2;
             v[9] -= 2;
+            displaySquare();
             break;
     }
 }
