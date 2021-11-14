@@ -1,5 +1,7 @@
 #include <GL/glut.h>
 
+// ALUNO: Michael Miller Rodrigues Cardoso
+
 // COMANDOS DO TECLADO:
 // Subir quadrados da Ola: "a s d f g"
 // Descer quadrados da Ola: "z x c v b"
