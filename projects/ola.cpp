@@ -4,7 +4,7 @@
 // Subir quadrados da Ola: "a s d f g"
 // Descer quadrados da Ola: "z x c v b"
 
-static GLfloat v[10]={ // array do eixo y
+static GLfloat v[10]={ // array do eixo y das coordenadas dos quadrados
         0,  2,
         0,  2,
         0,  2,
@@ -122,7 +122,7 @@ int main(int argc, char **argv)
 
     glutInitWindowPosition(100,100);
     glutInitWindowSize(640,480);
-    glutCreateWindow("square");
+    glutCreateWindow("CG - Ola");
 
     glClearColor(0.0, 0.05, 0.10, 1.0); // cor de fundo
     glOrtho(-10.0, 10.0, -10.0, 10.0, 1.0, -1.0); // projeção ortogonal
