@@ -18,7 +18,7 @@ void displaySquare()
     glClear(GL_COLOR_BUFFER_BIT);
 
     glBegin(GL_QUADS);
-    glColor3f(1.0, 0.0, 0.5);
+    glColor3f(0.6, 0.3, 0.6);
     glVertex2f(3, v[0]); // coordenadas
     glVertex2f(2, v[0]);
     glVertex2f(2,v[1]);
@@ -34,7 +34,7 @@ void displaySquare()
     glEnd();
 
     glBegin(GL_QUADS);
-    glColor3f(0.1, 0.4, 0.35);
+    glColor3f(0.1, 0.5, 0.4);
     glVertex2f(-1, v[4]); // coordenadas
     glVertex2f(-2, v[4]);
     glVertex2f(-2,v[5]);
@@ -42,7 +42,7 @@ void displaySquare()
     glEnd();
 
     glBegin(GL_QUADS);
-    glColor3f(0.8, 0.3, 0.4);
+    glColor3f(0.6, 0.1, 0.3);
     glVertex2f(-3, v[6]); // coordenadas
     glVertex2f(-4, v[6]);
     glVertex2f(-4,v[7]);
@@ -50,7 +50,7 @@ void displaySquare()
     glEnd();
 
     glBegin(GL_QUADS);
-    glColor3f(0.7, 0.3, 0.1);
+    glColor3f(0.6, 0.3, 0.1);
     glVertex2f(-5, v[8]); // coordenadas
     glVertex2f(-6, v[8]);
     glVertex2f(-6,v[9]);
