@@ -14,7 +14,7 @@ static GLfloat v[10]={ // array do eixo y das coordenadas dos quadrados
         0,  2
 };
 
-// Renderizar quadrado
+// Renderizar quadrados
 void displaySquare()
 {
     glClear(GL_COLOR_BUFFER_BIT);
