@@ -1,7 +1,8 @@
 #include <GL/glut.h>
 
-// Subir quadrados da Ola: A S D F G
-// Descer quadrados da Ola: Z X C V B
+// COMANDOS DO TECLADO:
+// Subir quadrados da Ola: "a s d f g"
+// Descer quadrados da Ola: "z x c v b"
 
 static GLfloat v[10]={ // array do eixo y
         0,  2,
