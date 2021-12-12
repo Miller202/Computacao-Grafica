@@ -8,7 +8,7 @@
 
 void init();
 void display();
-void displayQuadrado();
+void displayCubo();
 void displayTelhado();
 void keyboard(unsigned char key, int x, int y);
 void reshape (int w, int h);
@@ -82,7 +82,7 @@ void display()
     glEnableClientState(GL_VERTEX_ARRAY);
     glVertexPointer(3, GL_FLOAT, 0, vertices);
 
-    displayQuadrado();
+    displayCubo();
 
     displayTelhado();
 
@@ -92,7 +92,7 @@ void display()
     glutSwapBuffers();
 }
 
-void displayQuadrado()
+void displayCubo()
 {
     glColor3f (AZUL); /* frente */
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, frenteIndices);
