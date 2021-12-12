@@ -3,5 +3,5 @@ project(CG_project)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(CG_project projects/catavento.cpp)
+add_executable(CG_project projects/casa.cpp)
 target_link_libraries(CG_project -lOpenGL32 -lglfw3dll -lfreeGLUT -lglu32)
