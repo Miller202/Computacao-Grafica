@@ -14,11 +14,9 @@ void keyboard(unsigned char key, int x, int y);
 void reshape (int w, int h);
 
 #define AZUL     0.2, 0.0, 1.0
-#define VERMELHO 1.0, 0.0, 0.2
+#define VERMELHO 1.0, 0.1, 0.3
 #define AMARELO  1.0, 1.0, 0.4
 #define VERDE    0.3, 1.0, 0.3
-#define CYAN     1.0, 0.0, 1.0
-#define LARANJA  0.8, 0.6, 0.1
 #define MARROM    0.8, 0.4, 0.3
 
 static GLfloat vertices[27] = {
@@ -94,37 +92,37 @@ void display()
 
 void displayCubo()
 {
-    glColor3f (AZUL); /* frente */
+    glColor3f(AZUL); /* frente */
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, frenteIndices);
 
-    glColor3f (AMARELO); /* esquerda */
+    glColor3f(AMARELO); /* esquerda */
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, esquerdaIndices);
 
-    glColor3f (VERMELHO); /* tras */
+    glColor3f(VERMELHO); /* tras */
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, trasIndices);
 
-    glColor3f (VERDE); /* direita */
+    glColor3f(VERDE); /* direita */
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, direitaIndices);
 
-    glColor3f (CYAN); /* topo */
+    glColor3f(AZUL); /* topo */
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, topoIndices);
 
-    glColor3f (LARANJA); /* fundo */
+    glColor3f(AZUL); /* fundo */
     glDrawElements(GL_QUADS, 4, GL_UNSIGNED_BYTE, fundoIndices);
 }
 
 void displayTelhado()
 {
-    glColor3f (MARROM); /* frente */
+    glColor3f(MARROM); /* frente */
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_BYTE, telhadoFrente);
 
-    glColor3f (MARROM); /* esquerda */
+    glColor3f(MARROM); /* esquerda */
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_BYTE, telhadoEsquerda);
 
-    glColor3f (MARROM); /* direita */
+    glColor3f(MARROM); /* direita */
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_BYTE, telhadoDireita);
 
-    glColor3f (MARROM); /* tras */
+    glColor3f(MARROM); /* tras */
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_BYTE, telhadoTras);
 }
 
