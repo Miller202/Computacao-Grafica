@@ -57,7 +57,6 @@ void displayPlanetWithMoon()
     glColor3f(AZUL);
     glRotatef(year, 0, 1, 0);
     glTranslatef(2, 0, 0);
-    glPushMatrix();
     glRotatef(day, 0, 1, 0);
     glutSolidSphere(0.2, 100, 100); // Generate planet
     glPopMatrix();
@@ -76,7 +75,6 @@ void displayPlanetWithMoon()
     glRotatef(1.75*day, 1, 1.2, 0);
     glTranslatef(0.35, 0, 0);
     glutSolidSphere(0.07, 100, 100); // Generate moon
-    glPopMatrix();
     glPopMatrix();
 }
 
@@ -158,8 +156,6 @@ void init()
     glClearColor(0.0, 0.05, 0.10, 1.0); // background color
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_COLOR_MATERIAL);
-    glShadeModel(GL_SMOOTH);
-    glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
 }
 
 int main(int argc, char **argv)
