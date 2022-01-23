@@ -52,11 +52,14 @@ void keyboard(unsigned char key, int x, int y)
 
 void displayPlanetWithMoon()
 {
+
+    glPushMatrix();
+    glRotatef(year, 0, 1, 0);
+    glTranslatef(2, 0, 0);
+
     // Planet
     glPushMatrix();
     glColor3f(AZUL);
-    glRotatef(year, 0, 1, 0);
-    glTranslatef(2, 0, 0);
     glRotatef(day, 0, 1, 0);
     glutSolidSphere(0.2, 100, 100); // Generate planet
     glPopMatrix();
@@ -75,6 +78,8 @@ void displayPlanetWithMoon()
     glRotatef(1.75*day, 1, 1.2, 0);
     glTranslatef(0.35, 0, 0);
     glutSolidSphere(0.07, 100, 100); // Generate moon
+    glPopMatrix();
+
     glPopMatrix();
 }
 
